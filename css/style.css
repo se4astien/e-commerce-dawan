@@ -286,6 +286,10 @@ img {
   padding: 20px;
 }
 
+.product .cart span {
+  justify-content: space-between;
+}
+
 /* Follow */
 .follow {
   display: flex;
