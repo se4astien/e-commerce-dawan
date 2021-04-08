@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: Roboto,sans-serif ;
+    background-color:rgb(245, 238, 238);
+    background-color:#eaedf1;
+    /* background-color: rgb(250, 243, 234); */
+
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: grid;;
+    grid-template-columns: 20% 80%;
+}
+
+/*------- Header --------*/
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;  
+}
+
+header .search{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem ;
+    margin: 0 5rem;
+    width: 25rem;
+    position: relative;
+}
+
+.search input{
+    height: 30px;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+
+}
+
+.search .fa-search{
+    position: absolute;
+    left: 18%;
+    color: rgb(212, 208, 208);
+}
+
+.search .fa-bell{
+    color: darkgray;
+    /* font-size: larger; */
+}
+
+
+/*------- Section Top Cards --------*/
+
+.top-cards{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+
+    
+}
+
+.top-card {
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.top-card .card-text > h3{
+    color: dimgray;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.top-card .card-text > div{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.top-card > i {
+    margin: 1rem;
+    width: 70px;
+    height: 50px;
+    padding: 10px;
+    font-size: xx-large;
+}
+
+
+.top-card .fa-shopping-cart {
+    background-color: #DEEEF9;
+    color: #0664A4 ;
+}
+
+.top-card .fa-box-open {
+    background-color: #FBE4EE;
+    color: #EC0B73 ;
+}
+
+.top-card .fa-truck-loading {
+    background-color: #FBF6D1;
+    color: #EDD832 ;
+}
+
+.top-card .fa-money-bill {
+    background-color: #d1e4d1;
+    color: #62b162;
+}
+
+/*------- Section central --------*/
+
+.center-section{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 0 3rem;
+    margin: 0 2rem;
+}
+
+
+
+/*------- Tableau --------*/
+
+table{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+table th, table td{
+    text-align: center;
+    padding:1.5rem;
+    
+}
+
+table tr{
+    border-top: 1px solid rgb(206, 203, 203);
+}
+
+table tr:first-of-type, 
+table tr:nth-of-type(2),
+table tr:nth-of-type(3)
+ {
+    border-top: none;
+}
+
+
+
+table tr{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: white;
+}
+
+
+ .table-title > th{
+    grid-column: 1 / 4 span;
+    font-size: 1.1rem;
+}
+
+
+
+
+
+/*------- Bloc dernières ventes  --------*/
+
+.last-sales{
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.card-container{
+    padding: 1rem;
+}
+
+.last-sales > h2{
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.sales-cards{
+    margin: 1rem 0;
+}
+
+.sales-card{
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+}
+
+.sales-card >img{
+   border-radius: 15px;
+   width: 5rem;
+}
+
+.sales-card .sales-card-body{
+    justify-self: center;
+    align-self: center;
+ }
+
+ .sales-card-body + div{
+     align-self: center;
+ }
+ 
+
+ /* Section sidebar */
+ .admin-menu{
+     background-color: #333;
+     background-color: #23395B;
+ }
+
+ .admin-menu .admin-nav {
+    margin: 2rem 3rem;
+    height: 30%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+ }
+
+ .admin-menu .admin-nav li{
+    list-style-type: none;
+ }
+
+ .admin-menu .admin-nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+ }
+
+ .fa-chart-pie,
+ .fa-users,
+ .fa-home,
+ .fa-gifts
+ {
+     color: white;
+     margin: 0 2rem;
+ }
+
+
+
+
