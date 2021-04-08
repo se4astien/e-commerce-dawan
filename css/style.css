@@ -55,6 +55,7 @@ img {
 
 .main-nav ul li a {
   padding-bottom: 2px;
+  font-size: 18px;
 }
 
 .main-nav ul li a:hover {
@@ -102,8 +103,8 @@ img {
 /* HERO */
 .hero {
   width: 100%;
-  height: 400px;
-  background: url('../images/slide-01.jpeg') no-repeat center center/cover;
+  height: 300px;
+  background: url('../images/slide-01.jpeg') no-repeat bottom center/cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -120,6 +121,22 @@ img {
 
 .hero .btn {
   margin-top: 20px;
+}
+
+.hero.velo {
+  background: url('../images/velo.jpeg') no-repeat center center/cover;
+  height: 240px;
+}
+
+.hero.velo-electrique {
+  background: url('../images/velo-electrique.jpeg') no-repeat center
+    center/cover;
+  height: 240px;
+}
+
+.hero.trotinette {
+  background: url('../images/trotinette.jpeg') no-repeat center center/cover;
+  height: 240px;
 }
 
 /* Home cards */
@@ -139,7 +156,6 @@ img {
   width: 100%;
   height: 150px;
   margin-bottom: 20px;
-  border: 1px solid #000;
 }
 
 .home-cards h3 {
@@ -187,6 +203,124 @@ img {
 .carbon .content {
   width: 55%;
   padding: 100px 0 0 30px;
+}
+
+/* Pagination */
+.pagination {
+  margin: 30px 0;
+}
+
+.pagination ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination li {
+  padding: 5px 10px;
+  margin: 0 10px;
+  border: 1px solid #ccc;
+}
+
+.pagination li a {
+  color: #666;
+}
+
+/* PRODUCT */
+.go-back {
+  margin: 50px;
+  text-decoration: underline;
+}
+.product {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.product > div {
+  flex: 2;
+}
+
+.product img {
+  width: 100%;
+  height: 300px;
+}
+
+.product .description {
+  margin: 0 20px;
+  color: #222;
+}
+
+.product .description span {
+  color: #000;
+}
+
+.product .description h1 {
+  margin: 0;
+}
+
+.product .description p {
+  color: #777;
+}
+
+.product .description .rating {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-top: 20px;
+  padding: 10px 0;
+}
+
+.product .description .rating ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.product .description .rating ul li .fa-star {
+  color: yellowgreen;
+}
+
+.product .description .price {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.product .description .price span {
+  font-size: 2rem;
+}
+
+.product .cart {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px;
+}
+
+.product .cart div {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+
+.product .cart div:nth-child(2) span {
+  color: yellowgreen;
+}
+
+.product .cart button {
+  padding: 10px;
+  background-color: #262626;
+  color: #fff;
+  border: none;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 /* Follow */
