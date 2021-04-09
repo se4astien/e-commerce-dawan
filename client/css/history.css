@@ -1,0 +1,122 @@
+main{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* grid-template-rows: repeat(2,469.5px); */
+    gap: 10rem;
+}
+
+ /* barre de navigation côté gauche */
+ #nav-menu{
+     background-color: rgb(214, 212, 212);
+     color: white;
+     border-radius: 5px;
+     height: 70vh;
+ }
+
+ #nav-menu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+ }
+
+
+ #nav-menu a{
+   color: white;
+   font-size: 1.2rem;;
+}
+
+
+/*--- Section historique commandes ---*/
+
+#history-orders >h2{
+  text-align: center;
+}
+
+#history-orders .list-orders{
+    display: grid;
+    grid-template-rows: repeat(2,50px) 120px 10px;
+    justify-content: center;
+    border: 0.5px solid rgb(233, 233, 233);
+    border-radius: 10px;
+    box-shadow: -5px 5px 10px rgb(221, 221, 221);
+    padding-top: 1rem;
+}
+
+
+.head-info,
+.data-info
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.head-info{
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.data-info
+{
+   margin-bottom: 10px;
+    border-bottom: 1px solid rgb(209, 207, 207);
+}
+
+
+.head-info div,
+.data-info div
+{
+   text-align: center;
+}
+
+
+
+.action-info{
+   display: grid;
+   grid-template-columns: 1fr 2fr 1fr;
+   margin-bottom: 10px;
+}
+
+.action-info > .action-cta{
+    justify-self: center;
+    border-left: 1px solid rgb(209, 207, 207);
+    border-right: 1px solid rgb(209, 207, 207);
+    padding:1.5rem;
+}
+
+.action-info > img{
+    width: 8rem;
+}
+
+.action-cta{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.btn-buy{
+    background-color: #EC0B73;
+    color: white;
+    padding: 0 10px;
+    border: 1px solid #EC0B73;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.btn-check{
+    background-color: #2A9D8F;
+    color: white;
+    padding: 0 10px;
+    border: 1px solid #2A9D8F;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.action-pdf{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
