@@ -29,15 +29,38 @@ main{
 
 /*--- Section historique commandes ---*/
 
+#history-orders{
+    position: relative;
+}
+
 #history-orders >h2{
   text-align: center;
 }
+
+#history-orders hr:nth-of-type(1),
+#history-orders hr:nth-of-type(2)
+{
+    width: 26%;
+    position: absolute;
+    top: 4%;
+}
+
+#history-orders hr:nth-of-type(1){
+    left: 3%;
+  }
+
+#history-orders hr:nth-of-type(2){
+    right: 3%;
+}
+
 
 #history-orders .order-cards{
     border: 0.5px solid rgb(233, 233, 233);
     border-radius: 10px;
     box-shadow: -5px 5px 10px rgb(221, 221, 221);
     padding-top: 1rem;
+    margin: 0.8rem;
+    
 }
 
 #history-orders .list-orders{
