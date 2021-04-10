@@ -7,7 +7,7 @@ main{
 
  /* barre de navigation côté gauche */
  #nav-menu{
-     background-color: rgb(214, 212, 212);
+     background-color: rgb(153, 152, 152);
      color: white;
      border-radius: 5px;
      height: 70vh;
@@ -33,14 +33,17 @@ main{
   text-align: center;
 }
 
-#history-orders .list-orders{
-    display: grid;
-    grid-template-rows: repeat(2,50px) 120px 10px;
-    justify-content: center;
+#history-orders .order-cards{
     border: 0.5px solid rgb(233, 233, 233);
     border-radius: 10px;
     box-shadow: -5px 5px 10px rgb(221, 221, 221);
     padding-top: 1rem;
+}
+
+#history-orders .list-orders{
+    display: grid;
+    grid-template-rows: repeat(2,50px);
+    justify-content: center;
 }
 
 
@@ -70,39 +73,43 @@ main{
 }
 
 
-
 .action-info{
    display: grid;
-   grid-template-columns: 1fr 2fr 1fr;
+   grid-template-columns: 2fr 1fr;
    margin-bottom: 10px;
 }
 
-.action-info > .action-cta{
+.action-article{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+ .action-cta{
     justify-self: center;
     border-left: 1px solid rgb(209, 207, 207);
     border-right: 1px solid rgb(209, 207, 207);
     padding:1.5rem;
 }
 
-.action-info > img{
+
+.action-article >img{
     width: 8rem;
+    justify-self: center;
+    margin-bottom: 15px;
 }
-
-.action-cta{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 
 
 .btn-buy{
     background-color: #EC0B73;
     color: white;
-    padding: 0 10px;
     border: 1px solid #EC0B73;
     border-radius: 25px;
     cursor: pointer;
+
+
+    top: 40%;
+    left: 60%;
+
 }
 
 .btn-check{
@@ -112,6 +119,7 @@ main{
     border: 1px solid #2A9D8F;
     border-radius: 25px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .action-pdf{
@@ -119,4 +127,9 @@ main{
     flex-direction: column;
     align-items: center;
     align-content: center;
+    align-self: center;
+}
+
+.fa-file-pdf{
+    cursor: pointer;
 }
